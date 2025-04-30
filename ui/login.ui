@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>958</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>491</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image:url(:/login/background.jpg);
+border-top-left-radius: 100px;
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>30</y>
+     <width>421</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255,255,255,255);
+border-bottom-right-radius: 100px
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="kullanici_girisi">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>68</y>
+     <width>241</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgba(1, 34, 87);</string>
+   </property>
+   <property name="text">
+    <string>Kullanıcı Girişi</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kullanici_adi">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>328</y>
+     <width>221</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid rgb(230, 105, 14); /* Turuncu çizgi */
+    color: rgb(1, 34, 87); /* Logo lacivertine uyumlu yazı rengi */
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="placeholderText">
+    <string>Kullanıcı Adı</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="parola">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>388</y>
+     <width>221</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid rgb(230, 105, 14); /* Turuncu çizgi */
+    color: rgb(1, 34, 87); /* Logo lacivertine uyumlu yazı rengi */
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Parola</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>460</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton {
+    background-color: qlineargradient(
+        spread:pad, x1:0, y1:0.5, x2:1, y2:0.5,
+        stop:0 rgba(1, 34, 87, 230),       /* Logo Mavisi */
+        stop:1 rgba(230, 105, 14, 230)     /* Logo Turuncusu */
+    );
+    color: rgba(255, 255, 255, 230);       /* Beyaz yazı */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+QPushButton#pushButton:hover {
+    background-color: qlineargradient(
+        spread:pad, x1:0, y1:0.5, x2:1, y2:0.5,
+        stop:0 rgba(1, 30, 70, 255),        /* Daha koyu mavi tonu */
+        stop:1 rgba(255, 130, 30, 255)      /* Parlak turuncu tonu */
+    );
+}
+
+QPushButton#pushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: rgba(1, 25, 60, 255); /* Koyu mavi */
+}
+
+QPushButton#pushButton_2, #pushButton_3, #pushButton_4, #pushButton_5 {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(1, 34, 87, 255); /* Logo Mavisi */
+}
+
+QPushButton#pushButton_2:hover, #pushButton_3:hover, #pushButton_4:hover, #pushButton_5:hover {
+    color: rgba(230, 105, 14, 255); /* Logo Turuncusu */
+}
+
+QPushButton#pushButton_2:pressed, #pushButton_3:pressed, #pushButton_4:pressed, #pushButton_5:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    color: rgba(180, 85, 10, 255); /* Daha koyu turuncu */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>G i r i ş</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
