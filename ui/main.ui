@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1002</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="icon_only_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#icon_only_widget {
+    background-color: rgba(1, 34, 87, 255);
+}
+</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>50</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../icons/resources.qrc">:/login/logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="icon_label_button">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgba(1, 34, 87, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../icons/resources.qrc">
+       <normaloff>:/login/box.png</normaloff>:/login/box.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="icon_text_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>244</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#icon_text_widget{
+	background-color: rgba(1, 34, 87, 255);
+}</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>50</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../icons/resources.qrc">:/login/logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="main_screen_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>70</y>
+      <width>651</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="header_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>349</x>
+      <y>10</y>
+      <width>651</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
