@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="login">
+    <file>box_colored.png</file>
+    <file>delivery.png</file>
+    <file>gear.png</file>
+    <file>user.png</file>
     <file>box.png</file>
     <file>logo.png</file>
     <file>background.jpg</file>
