@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="login">
+    <file>menu-burger.png</file>
     <file>box_colored.png</file>
     <file>delivery.png</file>
     <file>gear.png</file>
