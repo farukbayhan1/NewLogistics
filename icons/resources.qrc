@@ -1,5 +1,12 @@
 <RCC>
   <qresource prefix="login">
+    <file>box-black.png</file>
+    <file>delivery-black.png</file>
+    <file>handskahe-black.png</file>
+    <file>report-hover.png</file>
+    <file>report-black.png</file>
+    <file>report.png</file>
+    <file>shake-hands.png</file>
     <file>menu-burger.png</file>
     <file>box_colored.png</file>
     <file>delivery.png</file>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1002</width>
-    <height>629</height>
+    <width>967</width>
+    <height>861</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>10</x>
       <y>10</y>
       <width>91</width>
-      <height>611</height>
+      <height>841</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -58,10 +58,10 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="pushButtonBox">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>110</y>
        <width>40</width>
        <height>40</height>
@@ -87,7 +87,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	background-color: rgba(0,0,0,0)
+	background-color: rgba(0, 0, 0, 0);
 }</string>
      </property>
      <property name="text">
@@ -95,7 +95,8 @@
      </property>
      <property name="icon">
       <iconset resource="../icons/resources.qrc">
-       <normaloff>:/login/box_colored.png</normaloff>:/login/box_colored.png</iconset>
+       <normaloff>:/login/box_colored.png</normaloff>
+       <activeon>:/login/box-black.png</activeon>:/login/box_colored.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -103,15 +104,18 @@
        <height>40</height>
       </size>
      </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
      <property name="autoDefault">
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="pushButtonTruck">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>170</y>
+       <x>20</x>
+       <y>180</y>
        <width>40</width>
        <height>40</height>
       </rect>
@@ -138,13 +142,203 @@
      </property>
      <property name="icon">
       <iconset resource="../icons/resources.qrc">
-       <normaloff>:/login/delivery.png</normaloff>:/login/delivery.png</iconset>
+       <normaloff>:/login/delivery.png</normaloff>
+       <activeon>:/login/delivery-black.png</activeon>:/login/delivery.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
        <height>40</height>
       </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSettings">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>730</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgba(0,0,0,0)
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../icons/resources.qrc">
+       <normaloff>:/login/gear.png</normaloff>:/login/gear.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSettings_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>670</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgba(0,0,0,0)
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../icons/resources.qrc">
+       <normaloff>:/login/user.png</normaloff>:/login/user.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgba(0, 0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../icons/resources.qrc">
+       <normaloff>:/login/shake-hands.png</normaloff>
+       <activeon>:/login/handskahe-black.png</activeon>:/login/shake-hands.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonBox_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>340</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgba(0, 0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../icons/resources.qrc">
+       <normaloff>:/login/report.png</normaloff>
+       <activeon>:/login/report-black.png</activeon>:/login/report.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
      </property>
     </widget>
    </widget>
@@ -154,7 +348,7 @@
       <x>103</x>
       <y>10</y>
       <width>241</width>
-      <height>611</height>
+      <height>841</height>
      </rect>
     </property>
     <property name="styleSheet">
