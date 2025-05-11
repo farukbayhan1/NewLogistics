@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="login">
+    <file>driver-black.png</file>
+    <file>driver-colored.png</file>
     <file>box-black.png</file>
     <file>delivery-black.png</file>
     <file>handskahe-black.png</file>
