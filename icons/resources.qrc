@@ -1,5 +1,11 @@
 <RCC>
   <qresource prefix="login">
+    <file>menu-black.png</file>
+    <file>menu-colored.png</file>
+    <file>settigns-black.png</file>
+    <file>user-black.png</file>
+    <file>courier-colored.png</file>
+    <file>courier-black.png</file>
     <file>driver-black.png</file>
     <file>driver-colored.png</file>
     <file>box-black.png</file>
