@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>box-colored.png</file>
+    <file>box-hover.png</file>
+    <file>box-pressed.png</file>
+    <file>employee-colored.png</file>
+    <file>employee-hover.png</file>
+    <file>employee-pressed.png</file>
+    <file>menu-colored.png</file>
+    <file>menu-hover.png</file>
+    <file>menu-pressed.png</file>
+    <file>report-colored.png</file>
+    <file>report-hover.png</file>
+    <file>report-pressed.png</file>
+    <file>settings-colored.png</file>
+    <file>settings-hover.png</file>
+    <file>settings-pressed.png</file>
+    <file>truck-colored.png</file>
+    <file>truck-hover.png</file>
+    <file>truck-pressed.png</file>
+    <file>user-colored.png</file>
+    <file>user-hover.png</file>
+    <file>user-pressed.png</file>
+  </qresource>
+</RCC>

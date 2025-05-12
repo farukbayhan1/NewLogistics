@@ -1,0 +1,13 @@
+QPushButton {
+    border-image: url(:/icons/ic-explore);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+QPushButton:hover {
+    border-image: url(:/icons/ic-explore-hover);
+    background-repeat: no-repeat;
+}
+
+# Will code pressed

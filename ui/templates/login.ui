@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image:url(:/login/background.jpg);
+    <string notr="true">border-image:url(:/background.jpg);
 border-top-left-radius: 100px;
 
 </string>

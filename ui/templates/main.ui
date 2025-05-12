@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1151</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kılıç Logistics</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#widgetIconOnly{
+	background-color: rgba(1,34,87,170);
+	
+}
+
+QWidget#widgetDropdown{
+	background-color: rgba(1,34,87,200);
+}
+
+QWidget#widgetPage{
+	background-color:rgba(1,34,87,180)
+}
+
+QPushButton#pushButtonMenu{
+	border-image: url(:/newPrefix/menu-colored.png);
+	background-repeat: no-repat;
+	width: 50px;
+	height: 45px;
+}
+
+QPushButton#pushButtonMenu:hover{
+	border-image: url(:/newPrefix/menu-hover.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonMenu:pressed{
+	border-image: url(:/newPrefix/menu-pressed.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonEmployee{
+	border-image: url(:/newPrefix/employee-colored.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 45px;
+}
+
+QPushButton#pushButtonEmployee:hover{
+	border-image: url(:/newPrefix/employee-hover.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonEmployee:pressed{
+	border-image: url(:/newPrefix/employee-pressed.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonOrder{
+	border-image: url(:/newPrefix/box-colored.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 45px;
+}
+
+QPushButton#pushButtonOrder:hover{;
+	border-image: url(:/newPrefix/box-hover.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonOrder:pressed{
+	border-image: url(:/newPrefix/box-pressed.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonTruck{
+	border-image: url(:/newPrefix/truck-colored.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 45px;
+}
+
+QPushButton#pushButtonTruck:hover{
+	border-image: url(:/newPrefix/truck-hover.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonTruck:pressed{
+	border-image: url(:/newPrefix/truck-pressed.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonReport{
+	border-image: url(:/newPrefix/report-colored.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 45px;
+}
+
+QPushButton#pushButtonReport:hover{
+	border-image: url(:/newPrefix/report-hover.png);
+	background-repeat: no-repeat;
+}
+
+QPushButton#pushButtonReport:pressed{
+	border-image: url(:/newPrefix/report-pressed.png);
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+</string>
+   </property>
+   <widget class="QWidget" name="widgetIconOnly" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="pushButtonMenu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>50</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonEmployee">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>50</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonOrder">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>50</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonTruck">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>50</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonReport">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>350</y>
+       <width>50</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widgetDropdown" native="true">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>161</width>
+      <height>851</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widgetPage" native="true">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>70</y>
+      <width>891</width>
+      <height>781</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/buttons/buttonResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
