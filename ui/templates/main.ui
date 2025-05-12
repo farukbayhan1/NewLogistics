@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
     <string notr="true">QWidget#widgetIconOnly{
-	background-color: rgba(1,34,87,170);
+	background-color: #e6f0fa;
 	
 }
 
@@ -63,36 +63,36 @@ QPushButton#pushButtonEmployee:pressed{
 }
 
 QPushButton#pushButtonOrder{
-	border-image: url(:/newPrefix/box-colored.png);
+	border-image: url(:/newPrefix/box.svg);
 	background-repeat: no-repeat;
 	width: 50px;
 	height: 45px;
 }
 
 QPushButton#pushButtonOrder:hover{;
-	border-image: url(:/newPrefix/box-hover.png);
+	border-image: url(:/newPrefix/box-hover.svg);
 	background-repeat: no-repeat;
 }
 
 QPushButton#pushButtonOrder:pressed{
-	border-image: url(:/newPrefix/box-pressed.png);
+	border-image: url(:/newPrefix/box-pressed.svg);
 	background-repeat: no-repeat;
 }
 
 QPushButton#pushButtonTruck{
-	border-image: url(:/newPrefix/truck-colored.png);
+	border-image: url(:/newPrefix/truck.svg);
 	background-repeat: no-repeat;
 	width: 50px;
 	height: 45px;
 }
 
 QPushButton#pushButtonTruck:hover{
-	border-image: url(:/newPrefix/truck-hover.png);
+	border-image: url(:/newPrefix/truck-hover.svg);
 	background-repeat: no-repeat;
 }
 
 QPushButton#pushButtonTruck:pressed{
-	border-image: url(:/newPrefix/truck-pressed.png);
+	border-image: url(:/newPrefix/truck-pressed.svg);
 	background-repeat: no-repeat;
 }
 
@@ -163,7 +163,7 @@ QPushButton#pushButtonReport:pressed{
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>140</y>
+       <y>150</y>
        <width>50</width>
        <height>45</height>
       </rect>
@@ -188,7 +188,7 @@ QPushButton#pushButtonReport:pressed{
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>210</y>
+       <y>90</y>
        <width>50</width>
        <height>45</height>
       </rect>
@@ -213,7 +213,7 @@ QPushButton#pushButtonReport:pressed{
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>270</y>
+       <y>210</y>
        <width>50</width>
        <height>45</height>
       </rect>
@@ -237,8 +237,8 @@ QPushButton#pushButtonReport:pressed{
     <widget class="QPushButton" name="pushButtonReport">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>350</y>
+       <x>10</x>
+       <y>290</y>
        <width>50</width>
        <height>45</height>
       </rect>

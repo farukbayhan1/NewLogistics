@@ -1,7 +1,17 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>box.svg</file>
+    <file>box-hover.svg</file>
+    <file>box-pressed.svg</file>
+    <file>truck-pressed.svg</file>
+    <file>truck-hover.svg</file>
+    <file>truck.svg</file>
+    <file>truck-blue-colored.png</file>
+    <file>truck-blue-hover.png</file>
+    <file>truck-blue-pressed.png</file>
     <file>box-colored.png</file>
     <file>box-hover.png</file>
+    <file>truck-red.svg</file>
     <file>box-pressed.png</file>
     <file>employee-colored.png</file>
     <file>employee-hover.png</file>
