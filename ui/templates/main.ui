@@ -31,6 +31,7 @@ QWidget#widgetPage{
 /* Buttons */
 
 QPushButton#pushButtonMenu{
+	
 	border-image: url(:/buttons/menu-colored.svg);
 	background-repeat: no-repeat;
 	width: 50px;
@@ -39,10 +40,12 @@ QPushButton#pushButtonMenu{
 QPushButton#pushButtonMenu:hover{
 	border-image: url(:/buttons/menu-hover.svg);
 	background-repeat: no-repeat;
+	background-color: #d0e6ff;
 }
 QPushButton#pushButtonMenu:pressed{
 	border-image: url(:/buttons/menu-pressed.svg);
 	background-repeat: no-repeat;
+	background-color: #d0e6ff;
 }
 
 QPushButton#pushButtonOrder{
@@ -54,10 +57,12 @@ QPushButton#pushButtonOrder{
 QPushButton#pushButtonOrder:hover{
 	border-image: url(:/buttons/box-hover.svg);
 	background-repeat: no-repeat;
+	background-color: #d0e6ff;
 }
 QPushButton#pushButtonOrder:pressed{
 	border-image: url(:/buttons/box-pressed.svg);
 	background-repeat: no-repeat;
+	background-color: #d0e6ff;
 }
 
 QPushButton#pushButtonTruck{
