@@ -1,0 +1,31 @@
+<RCC>
+  <qresource prefix="buttons">
+    <file>courier-colored.svg</file>
+    <file>courier-hover.svg</file>
+    <file>courier-pressed.svg</file>
+    <file>logout-colored.svg</file>
+    <file>driver-colored.svg</file>
+    <file>driver-hover.svg</file>
+    <file>driver-pressed.svg</file>
+    <file>logout-hover.svg</file>
+    <file>logout-pressed.svg</file>
+    <file>box-colored.svg</file>
+    <file>box-hover.svg</file>
+    <file>box-pressed.svg</file>
+    <file>employee-colored.svg</file>
+    <file>employee-hover.svg</file>
+    <file>employee-pressed.svg</file>
+    <file>menu-colored.svg</file>
+    <file>menu-hover.svg</file>
+    <file>menu-pressed.svg</file>
+    <file>report-colored.svg</file>
+    <file>report-hover.svg</file>
+    <file>report-pressed.svg</file>
+    <file>settings-colored.svg</file>
+    <file>settings-hover.svg</file>
+    <file>settings-pressed.svg</file>
+    <file>truck-colored.svg</file>
+    <file>truck-hover.svg</file>
+    <file>truck-pressed.svg</file>
+  </qresource>
+</RCC>
