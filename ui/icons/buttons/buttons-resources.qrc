@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="buttons">
+    <file>user.svg</file>
     <file>courier-colored.svg</file>
     <file>courier-hover.svg</file>
     <file>courier-pressed.svg</file>
