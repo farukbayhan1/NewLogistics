@@ -97,6 +97,8 @@ class MainWindow(QMainWindow):
         self.pushButtonTruck.clicked.connect(lambda: self.show_dropdown(self.pushButtonTruck, self.dropdownvehicleandtrip))
         self.pushButtonCourier.clicked.connect(lambda: self.show_dropdown(self.pushButtonCourier, self.dropdownpersonel))
         self.pushButtonReport.clicked.connect(lambda: self.show_dropdown(self.pushButtonReport, self.dropdownreport))
+        self.pushButtonLogout.clicked.connect(self.close)
+        
 
     def show_dropdown(self, button, dropdown_widget):
         pos = button.mapToGlobal(button.rect().topRight())
