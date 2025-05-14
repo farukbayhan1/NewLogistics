@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1292</width>
-    <height>891</height>
+    <width>1280</width>
+    <height>960</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>960</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>960</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Kılıç Logistics</string>
@@ -17,12 +29,15 @@
    <property name="styleSheet">
     <string notr="true">QWidget#widgetIconOnly{
 	background-color: #e3ebf5;
+	border-radius-left: 30px;
 }
 QWidget#widgetPage{
 	background-color: #f2f6fc;
+	border-radius-down-right: 30px;
 }
 QWidget#widgetUpBar{
 	background-color: #e3ebf5;
+	border-radius-right: 30px;
 }
 QWidget#widgetDropdown{
 	background-color: #e3ebf5;
@@ -187,28 +202,34 @@ QPushButton#pushButtonDriver:pressed{
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>101</width>
-      <height>721</height>
+      <width>151</width>
+      <height>961</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	height:30px;
+	
+}</string>
     </property>
     <widget class="QPushButton" name="pushButtonMenu">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>35</width>
-       <height>30</height>
+       <x>50</x>
+       <y>40</y>
+       <width>50</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="minimumSize">
       <size>
-       <width>35</width>
-       <height>30</height>
+       <width>50</width>
+       <height>40</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>45</width>
+       <width>50</width>
        <height>40</height>
       </size>
      </property>
@@ -216,434 +237,228 @@ QPushButton#pushButtonDriver:pressed{
       <string/>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButtonOrder">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>160</y>
-       <width>35</width>
-       <height>30</height>
+       <x>40</x>
+       <y>730</y>
+       <width>47</width>
+       <height>131</height>
       </rect>
      </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_13">
+      <item>
+       <widget class="QPushButton" name="pushButtonReport">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonSettings">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonLogout">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
-    <widget class="QPushButton" name="pushButtonTruck">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>210</y>
-       <width>35</width>
-       <height>30</height>
+       <x>40</x>
+       <y>150</y>
+       <width>47</width>
+       <height>221</height>
       </rect>
      </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonEmployee">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>60</y>
-       <width>35</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonReport">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>560</y>
-       <width>35</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonSettings">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>610</y>
-       <width>35</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="sizeIncrement">
-      <size>
-       <width>45</width>
-       <height>45</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonLogout">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>660</y>
-       <width>35</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonCourier">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>320</y>
-       <width>35</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>35</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonReporDropDown_2">
-     <property name="geometry">
-      <rect>
-       <x>98</x>
-       <y>328</y>
-       <width>151</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_12">
+      <item>
+       <widget class="QPushButton" name="pushButtonEmployee">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonOrder">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonTruck">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCourier">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="widgetPage" native="true">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>50</y>
-      <width>791</width>
-      <height>671</height>
+      <x>150</x>
+      <y>80</y>
+      <width>1131</width>
+      <height>881</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>900</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1280</width>
+      <height>960</height>
+     </size>
     </property>
    </widget>
    <widget class="QWidget" name="widgetUpBar" native="true">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>150</x>
       <y>0</y>
-      <width>1021</width>
-      <height>51</height>
+      <width>1131</width>
+      <height>81</height>
      </rect>
     </property>
-    <widget class="QPushButton" name="pushButtonUser">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>970</x>
-       <y>10</y>
-       <width>45</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>45</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widgetDropdown" native="true">
-    <property name="geometry">
-     <rect>
-      <x>99</x>
-      <y>49</y>
-      <width>231</width>
-      <height>671</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-    background-color: #48B1DD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 5px 3px 5px;
-    font: bold 10pt &quot;Segoe UI&quot;;
-    text-align: center;
-}
-QPushButton:checked {
-    qproperty-icon: url(:/icons/arrow-up.svg);
-    background-color: #40a2cb;
-}
-QPushButton:hover {
-    background-color: #3ca2c8;
-}
-</string>
-    </property>
-    <widget class="QFrame" name="frame_2">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
+       <x>907</x>
        <y>20</y>
-       <width>195</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: #48B1DD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 5px 3px 5px;
-    font: bold 10pt &quot;Segoe UI&quot;;
-    text-align: center;
-}
-QPushButton:checked {
-    qproperty-icon: url(:/icons/arrow-up.svg);
-    background-color: #40a2cb;
-}
-QPushButton:hover {
-    background-color: #3ca2c8;
-}
-</string>
-        </property>
-        <property name="text">
-         <string>Müşteri İşlemleri</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QFrame" name="frame">
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: transparent;
-    color: #5F5F5F;
-    border-radius: 6px;
-    padding: 5px 10px 5px 14px;
-    font: 9pt &quot;Segoe UI&quot;;
-    qproperty-icon: url(:/icons/arrow-down-dark.svg);
-    qproperty-iconSize: 10px 10px;
-    text-align: center;
-}
-QPushButton:pressed {
-    qproperty-icon: url(:/icons/arrow-up-dark.svg);
-    background-color: #e6e6e6;
-}
-QPushButton:hover {
-    background-color: #e0e0e0;
-}
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton_2">
-           <property name="text">
-            <string>Müşteri Ekle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="text">
-            <string>Müşteri Bilgileri Güncelle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_4">
-           <property name="text">
-            <string>Müşteri Raporları</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QFrame" name="frame_4">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>120</y>
        <width>191</width>
-       <height>111</height>
+       <height>42</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <property name="spacing">
-       <number>6</number>
-      </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QLabel" name="labelUser">
         <property name="font">
          <font>
           <family>Segoe UI</family>
@@ -654,522 +469,28 @@ QPushButton:hover {
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: #48B1DD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 5px 3px 5px;
-    font: bold 10pt &quot;Segoe UI&quot;;
-    text-align: center;
-}
-QPushButton:checked {
-    qproperty-icon: url(:/icons/arrow-up.svg);
-    background-color: #40a2cb;
-}
-QPushButton:hover {
-    background-color: #3ca2c8;
-}
-</string>
+         <string notr="true">QLabel#labelUser{
+	color: #5f5f5f;
+	font: bold 10pt &quot;Segoe UI&quot;;
+	qproperty-alignment: 'AlignCenter';
+}</string>
         </property>
         <property name="text">
-         <string>Sipariş İşlemleri</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
+         <string>User</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QFrame" name="frame_3">
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: transparent;
-    color: #5F5F5F;
-    border-radius: 6px;
-    padding: 5px 10px 5px 14px;
-    font: 9pt &quot;Segoe UI&quot;;
-    qproperty-icon: url(:/icons/arrow-down-dark.svg);
-    qproperty-iconSize: 10px 10px;
-    text-align: center;
-}
-QPushButton:pressed {
-    qproperty-icon: url(:/icons/arrow-up-dark.svg);
-    background-color: #e6e6e6;
-}
-QPushButton:hover {
-    background-color: #e0e0e0;
-}
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton_6">
-           <property name="text">
-            <string>Sipariş Ekle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_7">
-           <property name="text">
-            <string>Siparişleri Görüntüle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_8">
-           <property name="text">
-            <string>Sipariş Raporları</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QFrame" name="frame_6">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>230</y>
-       <width>167</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_6">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QPushButton" name="pushButton_9">
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: #48B1DD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 5px 3px 5px;
-    font: bold 10pt &quot;Segoe UI&quot;;
-    text-align: center;
-}
-QPushButton:checked {
-    qproperty-icon: url(:/icons/arrow-up.svg);
-    background-color: #40a2cb;
-}
-QPushButton:hover {
-    background-color: #3ca2c8;
-}
-</string>
+       <widget class="QPushButton" name="pushButtonUser">
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
         </property>
         <property name="text">
-         <string>Araç ve Sefer İşlemleri</string>
+         <string/>
         </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QFrame" name="frame_5">
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: transparent;
-    color: #5F5F5F;
-    border-radius: 6px;
-    padding: 5px 10px 5px 14px;
-    font: 9pt &quot;Segoe UI&quot;;
-    qproperty-icon: url(:/icons/arrow-down-dark.svg);
-    qproperty-iconSize: 10px 10px;
-    text-align: center;
-}
-QPushButton:pressed {
-    qproperty-icon: url(:/icons/arrow-up-dark.svg);
-    background-color: #e6e6e6;
-}
-QPushButton:hover {
-    background-color: #e0e0e0;
-}
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton_10">
-           <property name="text">
-            <string>Araç Ekle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_11">
-           <property name="text">
-            <string>Araç Bilgileri Güncelle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_12">
-           <property name="text">
-            <string>Sefer Oluştur</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_13">
-           <property name="text">
-            <string>Seferleri Göster</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_14">
-           <property name="text">
-            <string>Sefer Raporları</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QFrame" name="frame_8">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>390</y>
-       <width>171</width>
-       <height>126</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_8">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QPushButton" name="pushButton_15">
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: #48B1DD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 5px 3px 5px;
-    font: bold 10pt &quot;Segoe UI&quot;;
-    text-align: center;
-}
-QPushButton:checked {
-    qproperty-icon: url(:/icons/arrow-up.svg);
-    background-color: #40a2cb;
-}
-QPushButton:hover {
-    background-color: #3ca2c8;
-}
-</string>
-        </property>
-        <property name="text">
-         <string>Personel İşlemleri</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QFrame" name="frame_7">
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: transparent;
-    color: #5F5F5F;
-    border-radius: 6px;
-    padding: 5px 10px 5px 14px;
-    font: 9pt &quot;Segoe UI&quot;;
-    qproperty-icon: url(:/icons/arrow-down-dark.svg);
-    qproperty-iconSize: 10px 10px;
-    text-align: center;
-}
-QPushButton:pressed {
-    qproperty-icon: url(:/icons/arrow-up-dark.svg);
-    background-color: #e6e6e6;
-}
-QPushButton:hover {
-    background-color: #e0e0e0;
-}
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_7">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton_16">
-           <property name="text">
-            <string>Sürücü İşlemleri</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_17">
-           <property name="text">
-            <string>Kurye İşlemleri</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_18">
-           <property name="text">
-            <string>Kullanıcı İşlemleri</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QFrame" name="frame_10">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>510</y>
-       <width>181</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_10">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QPushButton" name="pushButton_19">
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: #48B1DD;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 5px 3px 5px;
-    font: bold 10pt &quot;Segoe UI&quot;;
-    text-align: center;
-}
-QPushButton:checked {
-    qproperty-icon: url(:/icons/arrow-up.svg);
-    background-color: #40a2cb;
-}
-QPushButton:hover {
-    background-color: #3ca2c8;
-}
-</string>
-        </property>
-        <property name="text">
-         <string>Raporlar</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QFrame" name="frame_9">
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: transparent;
-    color: #5F5F5F;
-    border-radius: 6px;
-    padding: 5px 10px 5px 14px;
-    font: 9pt &quot;Segoe UI&quot;;
-    qproperty-icon: url(:/icons/arrow-down-dark.svg);
-    qproperty-iconSize: 10px 10px;
-    text-align: center;
-}
-QPushButton:pressed {
-    qproperty-icon: url(:/icons/arrow-up-dark.svg);
-    background-color: #e6e6e6;
-}
-QPushButton:hover {
-    background-color: #e0e0e0;
-}
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_9">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton_20">
-           <property name="text">
-            <string>Sipariş Raporları</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_21">
-           <property name="text">
-            <string>Sefer Raporları</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
        </widget>
       </item>
      </layout>

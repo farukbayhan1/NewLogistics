@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frameReport">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonReport">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #48B1DD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 3px 5px 3px 5px;
+    font: bold 10pt &quot;Segoe UI&quot;;
+    text-align: center;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Raporlar</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frameReportDropDown">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #5F5F5F;
+    border-radius: 6px;
+    padding: 5px 10px 5px 14px;
+    font: 9pt &quot;Segoe UI&quot;;
+    qproperty-icon: url(:/icons/arrow-down-dark.svg);
+    qproperty-iconSize: 10px 10px;
+    text-align: center;
+}
+QPushButton:pressed {
+    qproperty-icon: url(:/icons/arrow-up-dark.svg);
+    background-color: #e6e6e6;
+}
+QPushButton:hover {
+    background-color: #e0e0e0;
+}
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButtonEmployeeReport">
+           <property name="text">
+            <string>Müşteri Raporları</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonOrderReport">
+           <property name="text">
+            <string>Sipariş Raporları</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonTripReport">
+           <property name="text">
+            <string>Sefer Raporları</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
