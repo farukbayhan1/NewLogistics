@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1246</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#widgetIconOnly{
+	background-color: #e3ebf5;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	
+}
+QWidget#widgetPage{
+	background-color: #f2f6fc;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+
+}
+QWidget#widgetUpBar{
+	background-color: #e3ebf5;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	
+}
+QTabWidget::pane {
+    background-color: #f2f6fc;
+    border: 2px solid #e3ebf5;
+    border-radius: 10px;
+}
+QTabBar::tab {
+  	font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    color: #5f5f5f;
+    background-color: #e3ebf5;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding: 1px;
+	min-width: 0px;
+}
+
+ QTabBar::close-button {
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+    }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widgetIconOnly" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Icon Onyl Widget's Push Button */
+
+/* Employe */
+
+QPushButton#pushButtonEmployee{
+	border-image: url(:/buttons/employee-colored.svg);
+}
+QPushButton#pushButtonEmployee:hover{
+	border-image: url(:/buttons/employee-hover.svg)
+}
+QPushButton#pushButtonEmployee:pressed{
+	border-image: url(:/buttons/employee-pressed.svg)
+}
+
+/* Personel */
+
+QPushButton#pushButtonPersonel{
+	border-image: url(:/buttons/courier-colored.svg);
+}
+QPushButton#pushButtonPersonel:hover{
+	border-image: url(:/buttons/courier-hover.svg);
+}
+QPushButton#pushButtonPersonel:pressed{
+	border-image: url(:/buttons/courier-pressed.svg);
+}
+
+/* Order */
+
+QPushButton#pushButtonOrder{
+	border-image: url(:/buttons/box-colored.svg);
+}
+QPushButton#pushButtonOrder:hover{
+	border-image: url(:/buttons/box-hover.svg);
+}
+QPushButton#pushButtonOrder:pressed{
+	border-image: url(:/buttons/box-pressed.svg);
+}
+
+/* Vehicle And Trip */
+
+QPushButton#pushButtonVehicleAndTrip{
+	border-image: url(:/buttons/truck-colored.svg);
+}
+QPushButton#pushButtonVehicleAndTrip:hover{
+	border-image: url(:/buttons/truck-hover.svg);
+}
+QPushButton#pushButtonVehicleAndTrip:pressed{
+	border-image: url(:/buttons/truck-pressed.svg);
+}
+
+/* Report */
+
+QPushButton#pushButtonReport{
+	border-image: url(:/buttons/report-colored.svg);
+}
+QPushButton#pushButtonReport:hover{
+	border-image: url(:/buttons/report-hover.svg);
+}
+QPushButton#pushButtonReport:pressed{
+	border-image: url(:/buttons/report-pressed.svg);
+}
+
+/* Settings */
+
+QPushButton#pushButtonSettings{
+	border-image: url(:/buttons/settings-colored.svg);
+}
+QPushButton#pushButtonSettings:hover{
+	border-image: url(:/buttons/settings-hover.svg);
+}
+QPushButton#pushButtonSettings:pressed{
+	border-image: url(:/buttons/settings-pressed.svg);
+}
+
+/* Logout */
+
+QPushButton#pushButtonLogout{
+	border-image: url(:/buttons/logout-colored.svg);
+}
+QPushButton#pushButtonLogout:hover{
+	border-image: url(:/buttons/logout-hover.svg);
+}
+QPushButton#pushButtonLogout:pressed{
+	border-image: url(:/buttons/logout-pressed.svg);
+}
+
+
+
+
+</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>89</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QWidget" name="widgetUpButtonsContainer" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButtonEmployee">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonPersonel">
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonOrder">
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonVehicleAndTrip">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>45</horstretch>
+                <verstretch>40</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>308</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QWidget" name="widgetDownButtonContainer" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButtonReport">
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonSettings">
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonLogout">
+              <property name="minimumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>45</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widgetUpBar" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButtonUser{
+	border-image: url(:/buttons/user.svg)
+}
+
+QLabel#labelUser{
+	font: 12pt &quot;Segoe UI&quot;;
+	color: #5f5f5f;
+	align-right: 3px;
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>979</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QWidget" name="widgetUserContainer" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>20</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="labelUser">
+                <property name="text">
+                 <string>User</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonUser">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>45</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>45</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widgetPage" native="true">
+          <property name="styleSheet">
+           <string notr="true">QTabWidget::pane {
+        background-color: #f2f6fc;;
+        border: 2px solid #e3ebf5;
+        border-radius: 10px;
+}
+    QTabBar::tab {
+        font: 8pt &quot;Segoe UI&quot;;
+        color: #5f5f5f;
+        background-color: #e3ebf5;;
+        border: none;
+        border-radius: 10px 10px 0 0;
+        padding: 5px 10px;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/buttons/buttons-resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButtonLogout</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonLogout</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>801</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>801</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

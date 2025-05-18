@@ -151,7 +151,7 @@ QPushButton:hover {
          <item>
           <widget class="QPushButton" name="pushButtonUpdateOrder">
            <property name="text">
-            <string>Siparişleri Görüntüle</string>
+            <string>Sipariş Bilgisi Güncelle</string>
            </property>
           </widget>
          </item>

@@ -203,6 +203,7 @@ QPushButton#pushButtonDriver:pressed{
 
 </string>
    </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
    <widget class="QWidget" name="widgetIconOnly" native="true">
     <property name="geometry">
      <rect>
@@ -453,7 +454,7 @@ QPushButton#pushButtonDriver:pressed{
       <height>81</height>
      </rect>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>910</x>
@@ -501,6 +502,28 @@ QPushButton#pushButtonDriver:pressed{
       </item>
      </layout>
     </widget>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1051</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
    </widget>
   </widget>
  </widget>
