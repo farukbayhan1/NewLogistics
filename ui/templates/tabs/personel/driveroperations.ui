@@ -6,16 +6,311 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>963</width>
+    <height>611</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <property name="styleSheet">
+   <string notr="true">QGroupBox{
+	background-color: transparent;
+	border-radius: 15px;
+	margin-top: 15px;
+	font: 9pt &quot;Segoe UI&quot;;
+	color: #5f5f5f
+}
+
+QListView {
+    border: 2px solid #e3ebf5;
+    border-radius: 10px;
+    background-color: transparent;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 5px 10px;
+    background-color: #e3ebf5;
+    border-radius: 7px;
+    color: #5f5f5f;
+}
+
+QLabel{
+	font: 9pt &quot;Segoe UI&quot;;
+	color: #5f5f5f;
+}
+
+QLineEdit{
+	background-color: transparent;
+	border: 2px solid #ccd9e6;
+	border-radius: 10px;
+	font: 9 pt &quot;Segoe UI&quot; #5f5f5f;
+}
+
+QTextEdit{
+	background-color: transparent;
+	border: 2px solid #ccd9e6;
+	border-radius: 10px;
+	font: 9 pt &quot;Segoe UI&quot; #5f5f5f;
+}
+
+QPushButton {
+    background-color: #48B1DD;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font: 9pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #007BFF;
+}
+
+QPushButton:pressed {
+    background-color: #5F5F5F;
+}
+QComboBox {
+    background-color: transparent;
+    border: 2px solid #ccd9e6;
+    border-radius: 10px;
+    padding: 5px 8px;
+    font: 9pt &quot;Segoe UI&quot;;
+    color: #5f5f5f;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px;
+    border-left: 1px solid #5f5f5f;
+}
+
+
+QComboBox QAbstractItemView {
+    border: 2px solid #e3ebf5;
+    selection-background-color: #e3ebf5;
+    background-color: white;
+    color: #5f5f5f;
+    font: 9pt &quot;Segoe UI&quot;;
+    border-radius: 5px;
+}
+
+
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="QWidget" name="widget" native="true"/>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QGroupBox" name="groupDriverAdd">
+           <property name="title">
+            <string>Sürücü Ekle</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="topMargin">
+             <number>25</number>
+            </property>
+            <item>
+             <layout class="QFormLayout" name="formLayoutAdd">
+              <item row="0" column="0">
+               <widget class="QLabel" name="labelDriverTcNo">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>TC No</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEditDriverTcNo">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="labelDriverName">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Adı</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEditDriverName">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="labelDriverSurname">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Soyadı</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEditDriverSurname">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="labelDriverPhone">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Telefon</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEditDriverPhone">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="labelDriverAdress">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Adres</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTextEdit" name="textEditDriverAdress"/>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <layout class="QHBoxLayout" name="horizontalLayoutAddButton">
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButtonDriverAdd">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Ekle</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBoxDrivers">
+           <property name="title">
+            <string>Sürücüler</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="topMargin">
+             <number>25</number>
+            </property>
+            <item>
+             <widget class="QListView" name="listViewDrivers"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </item>
   </layout>
  </widget>

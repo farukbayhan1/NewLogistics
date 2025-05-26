@@ -2,6 +2,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtWidgets import QWidget, QGraphicsOpacityEffect
 from PyQt5.QtCore import Qt, QPropertyAnimation
 
+
 class EmployeeDropDown(QWidget):
     def __init__(self, main_window_ref):
         super().__init__()

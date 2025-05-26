@@ -25,6 +25,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame{
+	background-color: #e3ebf5;
+}</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QFrame" name="frameReport">
@@ -101,7 +106,10 @@ QPushButton:pressed {
 QPushButton:hover {
     background-color: #e0e0e0;
 }
-</string>
+
+QFrame{
+	background-color: #e3ebf5;
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>

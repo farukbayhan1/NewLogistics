@@ -26,8 +26,8 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-	background-color: transparent;
+   <string notr="true">QFrame{
+	background-color: #e3ebf5;;
 	border: none;
 }
 
@@ -52,7 +52,9 @@
    <item>
     <widget class="QFrame" name="frameEmployee">
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">QFrame{
+	background-color: #e3ebf5;
+}</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -134,7 +136,10 @@ QPushButton:pressed {
 QPushButton:hover {
     background-color: #e0e0e0;
 }
-</string>
+
+QFrame{
+	background-color: #e3ebf5;
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
