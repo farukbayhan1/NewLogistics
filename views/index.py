@@ -43,6 +43,8 @@ from views.tabs.report.reporttrip import ReportMenuTripTab
 # Controllers
 from controllers.employeecontroller import AddEmployeeController
 from controllers.usercontroller import AddUserController
+from controllers.drivercontroller import DriverController
+from controllers.couriercontroller import CourierController
 
 
 project_root = Path(__file__).resolve().parent.parent
@@ -134,15 +136,18 @@ class MainWindow(QMainWindow):
 
     # Personel Tabs Functions
     def show_driver_operations(self):
-        widget = DriverOperationsTab()
+        widget = DriverOperationsTab(self.username,self.user_role)
+        self.driver_controller = DriverController(widget)
         self.show_tab(widget, "Sürücü İşlemleri")
-        print(self.user_role,self.username)
+    
     def show_courier_operations(self):
-        widget = CourierOperationsTab()
+        widget = CourierOperationsTab(self.username,self.user_role)
+        self.courier_controller = CourierController(widget)
         self.show_tab(widget, "Kurye İşlemleri")
+    
     def show_user_operations(self):
         widget = UserOperationsTab(self.username,self.user_role)
-        AddUserController(widget)
+        self.user_controller = AddUserController(widget)
         self.show_tab(widget, "Kullanıcı İşlemleri")
 
     # Order Tabs Functions

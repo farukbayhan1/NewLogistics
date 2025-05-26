@@ -22,7 +22,7 @@
 	color: #5f5f5f
 }
 
-QListView {
+QTableWidget {
     border: 2px solid #e3ebf5;
     border-radius: 10px;
     background-color: transparent;
@@ -301,7 +301,7 @@ QComboBox QAbstractItemView {
              <number>25</number>
             </property>
             <item>
-             <widget class="QListView" name="listViewDrivers"/>
+             <widget class="QTableWidget" name="tableWidgetDrivers"/>
             </item>
            </layout>
           </widget>

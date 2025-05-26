@@ -4,7 +4,7 @@ from PyQt5.QtCore import Qt, QPropertyAnimation
 
 
 class CourierOperationsTab(QWidget):
-    def __init__(self):
+    def __init__(self,username,user_role):
         super().__init__()
         uic.loadUi("ui/templates/tabs/personel/courieroperations.ui", self)
         self.opacity_effect = QGraphicsOpacityEffect(self)
@@ -14,6 +14,7 @@ class CourierOperationsTab(QWidget):
         self.animation.setStartValue(0)
         self.animation.setEndValue(1)
         self.animation.start()
-
+        self.username = username
+        self.user_role = user_role
     
 
