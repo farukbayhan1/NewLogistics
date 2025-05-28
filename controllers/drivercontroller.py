@@ -62,8 +62,8 @@ class DriverController:
                     QMessageBox.warning(self.tab, "Hata", f"{str(hata)}")
 
             except Exception as e:
-                QMessageBox.warning(self.tab, "Hata", f"Sürücü ekleme işleminde hata oluştu:\n{str(e)}")
-                print(str(e))
+                QMessageBox.warning(self.tab, "Hata", f"Sürücü Ekleme İşleminde Hata Oluştu:\n{str(e)}")
+                
 
     def load_drivers(self):
         try:

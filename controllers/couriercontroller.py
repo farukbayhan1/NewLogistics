@@ -74,7 +74,7 @@ class CourierController:
                 self.tab.tableWidgetCouriers.setItem(row_index,3,QTableWidgetItem(courier["courierPhone"]))
                 self.tab.tableWidgetCouriers.setItem(row_index,4,QTableWidgetItem(courier["courierAdress"]))
                 self.tab.tableWidgetCouriers.setItem(row_index,5,QTableWidgetItem(courier["userName"]))
-
+            print(enumerate(courier_list))
         except Exception as e:
             QMessageBox.warning(self.tab,"Hata","Kurye Bilgileri Getirilirken Hata Oluştu")
-            print(str(e))
+            print(str(e))   

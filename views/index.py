@@ -123,8 +123,9 @@ class MainWindow(QMainWindow):
 
     # Employe Tabs Functions
     def show_add_employee(self):
-        widget = AddEmployeeTab()
+        widget = AddEmployeeTab(self.username,self.user_role)
         AddEmployeeController(widget)
+        self.employee_controller = AddEmployeeController(widget)
         self.show_tab(widget, "Müşteri Ekle")
     def show_update_employee(self):
         widget = UpdateEmployeeTab()
