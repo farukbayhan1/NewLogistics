@@ -22,7 +22,7 @@
 	color: #5f5f5f
 }
 
-QListView {
+QTableWidget {
     border: 2px solid #e3ebf5;
     border-radius: 10px;
     background-color: transparent;
@@ -116,7 +116,7 @@ QComboBox QAbstractItemView {
          <item>
           <layout class="QFormLayout" name="formLayout">
            <item row="0" column="0">
-            <widget class="QLabel" name="label">
+            <widget class="QLabel" name="labelVehicle">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -135,7 +135,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QComboBox" name="comboBox">
+            <widget class="QComboBox" name="comboBoxVehicle">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -151,7 +151,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLabel" name="label_2">
+            <widget class="QLabel" name="labelDriver">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -170,7 +170,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="QComboBox" name="comboBox_2">
+            <widget class="QComboBox" name="comboBoxDriver">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -186,7 +186,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QLabel" name="label_3">
+            <widget class="QLabel" name="labelCourier">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -205,7 +205,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QComboBox" name="comboBox_3">
+            <widget class="QComboBox" name="comboBoxCourier">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -221,7 +221,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="3" column="0">
-            <widget class="QLabel" name="label_4">
+            <widget class="QLabel" name="labelLoadingProvince">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -240,7 +240,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="3" column="1">
-            <widget class="QComboBox" name="comboBox_4">
+            <widget class="QComboBox" name="comboBoxLoadingProvince">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -256,7 +256,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="4" column="0">
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="labelLoadingDistrict">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -275,7 +275,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="4" column="1">
-            <widget class="QComboBox" name="comboBox_5">
+            <widget class="QComboBox" name="comboBoxLoadingDistrict">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -291,7 +291,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="5" column="0">
-            <widget class="QLabel" name="label_6">
+            <widget class="QLabel" name="labelDestinationProvince">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -310,7 +310,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="5" column="1">
-            <widget class="QComboBox" name="comboBox_6">
+            <widget class="QComboBox" name="comboBoxDestinationProvince">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -326,7 +326,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="6" column="0">
-            <widget class="QLabel" name="label_7">
+            <widget class="QLabel" name="labelDestinationDistrict">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -340,12 +340,12 @@ QComboBox QAbstractItemView {
               </size>
              </property>
              <property name="text">
-              <string>Boşaltma İli</string>
+              <string>Boşaltma İlçesi</string>
              </property>
             </widget>
            </item>
            <item row="6" column="1">
-            <widget class="QComboBox" name="comboBox_7">
+            <widget class="QComboBox" name="comboBoxDestionationDistrict">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -361,42 +361,7 @@ QComboBox QAbstractItemView {
             </widget>
            </item>
            <item row="7" column="0">
-            <widget class="QLabel" name="label_8">
-             <property name="minimumSize">
-              <size>
-               <width>150</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Boşaltma İli</string>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="1">
-            <widget class="QLineEdit" name="lineEdit">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>30</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="8" column="0">
-            <widget class="QLabel" name="label_9">
+            <widget class="QLabel" name="labelExplanation">
              <property name="minimumSize">
               <size>
                <width>150</width>
@@ -414,10 +379,10 @@ QComboBox QAbstractItemView {
              </property>
             </widget>
            </item>
-           <item row="8" column="1">
-            <widget class="QTextEdit" name="textEdit"/>
+           <item row="7" column="1">
+            <widget class="QTextEdit" name="textEditExplanation"/>
            </item>
-           <item row="9" column="0" colspan="2">
+           <item row="8" column="0" colspan="2">
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
               <spacer name="horizontalSpacer">
@@ -433,7 +398,7 @@ QComboBox QAbstractItemView {
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="pushButtonCreateTrip">
                <property name="text">
                 <string>Oluştur</string>
                </property>
@@ -447,7 +412,7 @@ QComboBox QAbstractItemView {
        </widget>
       </item>
       <item>
-       <widget class="QGroupBox" name="groupBox_2">
+       <widget class="QGroupBox" name="groupBoxTrips">
         <property name="title">
          <string>Seferler</string>
         </property>
@@ -456,7 +421,7 @@ QComboBox QAbstractItemView {
           <number>25</number>
          </property>
          <item>
-          <widget class="QListView" name="listView"/>
+          <widget class="QTableWidget" name="tableWidgetTrips"/>
          </item>
         </layout>
        </widget>

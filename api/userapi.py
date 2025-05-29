@@ -5,7 +5,7 @@ class UserApi:
     def add_user_api(self, user_data):
         url = f"{BASE_URL}/user"
         response = requests.post(url, json=user_data)
-        if response.status_code == 200:
+        if response.status_code == 201:
             return response.json()
         elif response.status_code == 404:
             return response.json()
