@@ -84,7 +84,6 @@ class AddEmployeeController:
                     "username":self.username
                 })
                 if "Bilgi" in result:
-                    bilgi = result.get("Bilgi")
                     self.load_employee()
                     QMessageBox.information(self.tab,"Bilgi","Müşteri Ekleme İşlemi Başarıyla Gerçekleştirildi")
 

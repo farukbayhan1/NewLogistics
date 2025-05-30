@@ -7,11 +7,7 @@ class DriverApi:
     def add_driver_api(self, driver_data):
         url = f"{BASE_URL}/driver"
         response = requests.post(url, json=driver_data)
-        if response.status_code == 200:
-            return response.json()
-        elif response.status_code == 404:
-            return response.json()
-        elif response.status_code == 401:
+        if response.status_code in (201, 400, 401):
             return response.json()
         else:
             Exception(f"Sürücü Eklenirken Hata Oluştu: {response.status_code} - {response.text}")

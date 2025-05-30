@@ -2,7 +2,6 @@ from PyQt5.QtWidgets import QWidget, QMessageBox, QApplication
 from PyQt5 import uic
 from PyQt5.QtCore import Qt
 
-
 from ui.icons.background import login_resources
 from controllers.logincontroller import LoginController
 

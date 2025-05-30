@@ -48,6 +48,7 @@ class CourierController:
                 if "Bilgi" in result:
                     bilgi = result.get("Bilgi")
                     QMessageBox.information(self.tab, "Başarılı",f"{bilgi}")
+                    self.load_couriers()
                 elif "Hata" in result:
                     hata = result.get("Hata")
                     QMessageBox.warning(self.tab, "Hata", f"{str(hata)}")

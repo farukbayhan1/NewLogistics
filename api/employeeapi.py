@@ -8,11 +8,7 @@ class EmployeeApi:
     def add_employee_api(self,employee_data):
         url = f"{BASE_URL}/employee"
         response = requests.post(url, json=employee_data)
-        if response.status_code == 200:
-            return response.json()
-        elif response.status_code == 404:
-            return response.json()
-        elif response.status_code == 401:
+        if response.status_code in (201, 400, 401):
             return response.json()
         else:
            raise Exception(f"Müşteri Eklenirken Hata Oluştu: {response.status_code} - {response.text}")
@@ -20,9 +16,7 @@ class EmployeeApi:
     def get_employee_api(self):
         url = f"{BASE_URL}/employee"
         response = requests.get(url)
-        if response.status_code == 200:
-            return response.json()
-        elif response.status_code in (404, 401):
+        if response.status_code in (200, 400,401):
             return response.json()
         else:
             raise Exception(f"Müşteriler Alınırken Hata Oluştu: {response.status_code} - {response.text}")

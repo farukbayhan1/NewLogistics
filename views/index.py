@@ -45,6 +45,7 @@ from controllers.employeecontroller import AddEmployeeController
 from controllers.usercontroller import AddUserController
 from controllers.drivercontroller import DriverController
 from controllers.couriercontroller import CourierController
+from controllers.vehiclecontroller import VehicleController
 
 
 project_root = Path(__file__).resolve().parent.parent
@@ -164,7 +165,8 @@ class MainWindow(QMainWindow):
     
     # Vehicle and Trip Tabs Functions
     def show_add_vehicle(self):
-        widget = AddVehicleTab()
+        widget = AddVehicleTab(self.username,self.user_role)
+        self.vehicle_controller = VehicleController(widget)
         self.show_tab(widget, "Araç Ekle")
     def show_update_vehicle(self):
         widget = UpdateVehicleTab()
