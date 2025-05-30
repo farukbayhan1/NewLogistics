@@ -23,7 +23,6 @@ class AddEmployeeTab(QWidget):
         
         
 
-    
 
 
 

@@ -17,3 +17,11 @@ class VehicleApi:
             return response.json()
         else:
             raise Exception(f"Araçlar Alınırken Hata Oluştu: {response.status_code} - {response.text}")
+
+    def update_vehicle_api(self,vehicle_data):
+        url = f"{BASE_URL}/vehicle"
+        response = requests.put(url,json=vehicle_data)
+        if response.status_code in (201,400,401):
+            return response.json()
+        else:
+            raise Exception(f"Araç Bilgileri Güncelleme İşleminde Hata Oluştu: {response.status_code} - {response.text}")
