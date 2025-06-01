@@ -20,7 +20,6 @@ class VehicleAndTripDropDown(QWidget):
         
         #Push Buttons
         self.pushButtonAddVehicle.clicked.connect(self.open_add_vehicle_tab)
-        self.pushButtonUpdateVehicle.clicked.connect(self.update_vehicle_tab)
         self.pushButtonCreateTrip.clicked.connect(self.open_create_trip_tab)
         self.pushButtonShowTrip.clicked.connect(self.open_get_trip_tab)
         self.pushButtonReportTrip.clicked.connect(self.open_report_trip_tab)

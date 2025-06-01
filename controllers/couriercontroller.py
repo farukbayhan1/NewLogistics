@@ -58,6 +58,7 @@ class CourierController:
     def load_couriers(self):
         try:
             courier_list = self.service.get_couriers()
+            print(courier_list)
             self.tab.tableWidgetCouriers.setRowCount(len(courier_list))
             self.tab.tableWidgetCouriers.setColumnCount(6)
             self.tab.tableWidgetCouriers.setHorizontalHeaderLabels([

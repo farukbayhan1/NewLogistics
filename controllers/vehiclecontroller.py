@@ -76,6 +76,7 @@ class VehicleController:
             
                 if "Bilgi" in result:
                     print(result)
+                    self.load_vehicles()
                     return QMessageBox.information(self.form,"Bilgi","Araç Güncelleme İşlemi Başarılı")
                     
                 elif "Hata" in result:

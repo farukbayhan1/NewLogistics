@@ -97,7 +97,7 @@ class AddEmployeeController:
                 elif "Hata" in result:
                     hata = result.get("Hata")
                     QMessageBox.warning(self.tab,"Hata",f"Müşteri Ekleme İşleminde Hata Oluştu:\n{str(hata)}")
-
+                    return
             except Exception as e:
                 QMessageBox.warning(self.tab, "Hata", f"Bir Hata Oluştu: {str(e)}")
                 return

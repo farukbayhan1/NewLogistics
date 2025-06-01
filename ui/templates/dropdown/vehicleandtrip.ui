@@ -151,14 +151,7 @@ QFrame{
          <item>
           <widget class="QPushButton" name="pushButtonAddVehicle">
            <property name="text">
-            <string>Araç Ekle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButtonUpdateVehicle">
-           <property name="text">
-            <string>Araç Bilgileri Güncelle</string>
+            <string>Araç Ekle/ Araç Bilgilerini Düzenle</string>
            </property>
           </widget>
          </item>

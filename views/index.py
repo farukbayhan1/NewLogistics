@@ -30,7 +30,6 @@ from views.tabs.order.reportorder import ReportOrderTab
 
 # Vehicle and Trip Tabs
 from views.tabs.vehicleandtrip.addvehicle import AddVehicleTab
-from views.tabs.vehicleandtrip.updatevehicle import UpdateVehicleTab
 from views.tabs.vehicleandtrip.createtrip import CreateTripTab
 from views.tabs.vehicleandtrip.gettrip import GetTripTab
 from views.tabs.vehicleandtrip.reporttrip import ReportTripTab
@@ -46,6 +45,7 @@ from controllers.usercontroller import AddUserController
 from controllers.drivercontroller import DriverController
 from controllers.couriercontroller import CourierController
 from controllers.vehiclecontroller import VehicleController
+from controllers.tripcontroller import TripController
 
 
 project_root = Path(__file__).resolve().parent.parent
@@ -107,8 +107,8 @@ class MainWindow(QMainWindow):
         dropdown_widget.show()
 
     def show_tab(self, widget: QWidget, title: str):
-        # Eğer aynı tipte bir widget zaten açıksa, o sekmeye geç
-    
+        
+        # If tab in page 
         for i in range(self.tabWidget.count()):
             existing_widget = self.tabWidget.widget(i)
             if isinstance(existing_widget, type(widget)):
@@ -168,11 +168,10 @@ class MainWindow(QMainWindow):
         widget = AddVehicleTab(self.username,self.user_role)
         self.vehicle_controller = VehicleController(widget)
         self.show_tab(widget, "Araç Ekle")
-    def show_update_vehicle(self):
-        widget = UpdateVehicleTab()
-        self.show_tab(widget, "Araç Bilgileri Güncelle")
+
     def show_create_trip(self):
-        widget = CreateTripTab()
+        widget = CreateTripTab(self.username,self.user_role)
+        self.trip_controller = TripController(widget)
         self.show_tab(widget, "Yeni Sefer Oluştur")
     def show_get_trip(self):
         widget = GetTripTab()
