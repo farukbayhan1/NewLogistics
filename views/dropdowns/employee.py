@@ -19,17 +19,12 @@ class EmployeeDropDown(QWidget):
         self.animation.setStartValue(0)
         self.animation.setEndValue(1)
         self.pushButtonAddEmployee.clicked.connect(self.open_add_employee_tab)
-        self.pushButtonUpdateEmployee.clicked.connect(self.open_update_employee_tab)
         self.pushButtonReportEmployee.clicked.connect(self.open_report_employee_tab)
 
 
     def open_add_employee_tab(self):
         self.hide()
         self.mainWindowRef.show_add_employee() 
-
-    def open_update_employee_tab(self):
-        self.hide()
-        self.mainWindowRef.show_update_employee()
     
     def open_report_employee_tab(self):
         self.hide()

@@ -10,3 +10,6 @@ class AddEmployeeService:
     def get_employees(self):
         return self.api_client.get_employee_api()
     
+    def update_employee(self,employee_data):
+        return self.api_client.update_employee_api(employee_data)
+    

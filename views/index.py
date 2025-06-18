@@ -46,6 +46,7 @@ from controllers.drivercontroller import DriverController
 from controllers.couriercontroller import CourierController
 from controllers.vehiclecontroller import VehicleController
 from controllers.tripcontroller import TripController
+from controllers.ordercontroller import OrderController
 
 
 project_root = Path(__file__).resolve().parent.parent
@@ -154,11 +155,14 @@ class MainWindow(QMainWindow):
 
     # Order Tabs Functions
     def show_add_order(self):
-        widget = AddOrderTab()
+        widget = AddOrderTab(self.username,self.user_role)
+        self.order_controller = OrderController(widget)
         self.show_tab(widget, "Sipariş Ekle")
+
     def show_update_order(self):
-        widget = UpdateOrderTab()
-        self.show_tab(widget, "Sipariş Bilgileri Güncelle")
+        widget = UpdateOrderTab(self.username, self.user_role)
+        self.show_tab(widget, "Sipariş Bilgilerini Güncelle")
+        
     def show_report_order(self):
         widget = ReportOrderTab()
         self.show_tab(widget, "Sipariş Raporları")
@@ -195,9 +199,8 @@ class MainWindow(QMainWindow):
     
 
 
-if __name__ == "__main__":
-    import sys
+"""if __name__ == "__main__":
     app = QApplication(sys.argv)
     win = MainWindow()
     win.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec_())"""

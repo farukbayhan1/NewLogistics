@@ -10,6 +10,18 @@
     <height>592</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>508</width>
+    <height>592</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>508</width>
+    <height>592</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Araç Bilgilerini Güncelle</string>
   </property>
@@ -55,7 +67,7 @@ QLineEdit{
 
 QTextEdit{
 	background-color: transparent;
-	border: 2px solid #5f5f5f;
+	border: 2px solid #ccd9e6;
 	border-radius: 10px;
 	font: 9 pt &quot;Segoe UI&quot;;
 }
@@ -106,17 +118,41 @@ QComboBox QAbstractItemView {
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QWidget" name="widget" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
       <item>
        <widget class="QGroupBox" name="groupBoxAddVehicle">
-        <property name="maximumSize">
-         <size>
-          <width>507</width>
-          <height>564</height>
-         </size>
-        </property>
         <property name="title">
          <string>Araç Bilgilerini Güncelle</string>
         </property>
@@ -231,8 +267,15 @@ QComboBox QAbstractItemView {
              </property>
             </widget>
            </item>
-           <item row="7" column="0" colspan="2">
+           <item row="6" column="0" colspan="2">
             <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="labelVehicleId">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
              <item>
               <spacer name="horizontalSpacer">
                <property name="orientation">
@@ -266,13 +309,6 @@ QComboBox QAbstractItemView {
               </widget>
              </item>
             </layout>
-           </item>
-           <item row="6" column="0">
-            <widget class="QLabel" name="labelVehicleId">
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-            </widget>
            </item>
           </layout>
          </item>

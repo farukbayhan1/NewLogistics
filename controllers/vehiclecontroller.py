@@ -44,7 +44,7 @@ class VehicleController:
         vehicle_type = self.form.lineEditType.text().upper().strip()
         vehicle_load_capacity = self.form.lineEditLoadCapacity.text().strip()
 
-        # Check Lines
+        # Check Fields
         if not all([vehicle_number_plate,vehicle_brand,vehicle_model,vehicle_model_year,vehicle_type,vehicle_load_capacity]):
             return QMessageBox.warning(self.tab,"Uyarı", "Plaka, Marka, Model, Model Yılı, Araç Tipi ve Max Tonaj Zorunlu Alandır")
         

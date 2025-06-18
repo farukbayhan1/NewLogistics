@@ -320,6 +320,13 @@ QComboBox QAbstractItemView {
            <item row="6" column="0" colspan="2">
             <layout class="QHBoxLayout" name="horizontalLayoutPushButtonSpace">
              <item>
+              <widget class="QLabel" name="labelEmployeeId">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
               <spacer name="horizontalSpacerPushButtonSpace">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>

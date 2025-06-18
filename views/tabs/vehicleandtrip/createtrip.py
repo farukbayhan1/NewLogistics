@@ -32,6 +32,7 @@ class CreateTripTab(QWidget):
         self.comboBoxDestinationProvince.currentIndexChanged.connect(self.load_districts)
 
 
+
         # Load json files
         with open('resources/il.json', 'r', encoding='utf-8') as city_file:
             data = json.load(city_file)

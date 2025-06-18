@@ -148,6 +148,9 @@ QComboBox QAbstractItemView {
                <height>30</height>
               </size>
              </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="1" column="0">
@@ -182,6 +185,9 @@ QComboBox QAbstractItemView {
                <width>16777215</width>
                <height>30</height>
               </size>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -218,6 +224,9 @@ QComboBox QAbstractItemView {
                <height>30</height>
               </size>
              </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="3" column="0">
@@ -252,6 +261,9 @@ QComboBox QAbstractItemView {
                <width>16777215</width>
                <height>30</height>
               </size>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -288,6 +300,9 @@ QComboBox QAbstractItemView {
                <height>30</height>
               </size>
              </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="5" column="0">
@@ -323,6 +338,9 @@ QComboBox QAbstractItemView {
                <height>30</height>
               </size>
              </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="6" column="0">
@@ -357,6 +375,9 @@ QComboBox QAbstractItemView {
                <width>16777215</width>
                <height>30</height>
               </size>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -414,7 +435,7 @@ QComboBox QAbstractItemView {
       <item>
        <widget class="QGroupBox" name="groupBoxTrips">
         <property name="title">
-         <string>Seferler</string>
+         <string>Oluşturulan Seferler</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <property name="topMargin">

@@ -9,6 +9,10 @@ class DriverService:
     
     def get_drivers(self):
         return self.api_client.get_drivers_api()
+    
+    def update_driver(self,driver_data):
+        return self.api_client.update_driver(driver_data)
+    
 
     
 

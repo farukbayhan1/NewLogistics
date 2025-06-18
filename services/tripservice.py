@@ -10,4 +10,8 @@ class TripService:
     def get_trips(self):
         return self.api_client.get_trip_api()
     
+    def load_trip(self,order_list):
+        return self.api_client.load_trip(order_list)
+    
+    
     

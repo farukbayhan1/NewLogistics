@@ -6,6 +6,11 @@ class CourierService:
     
     def add_courier(self,courier_data):
         return self.api_client.add_courier_api(courier_data)
+    
     def get_couriers(self):
         return self.api_client.get_couriers_api()
+    
+    def update_courier(self,courier_data):
+        return self.api_client.update_courier(courier_data)
+    
     

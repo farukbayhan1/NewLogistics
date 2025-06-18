@@ -166,14 +166,7 @@ QFrame{
          <item>
           <widget class="QPushButton" name="pushButtonAddEmployee">
            <property name="text">
-            <string>Müşteri Ekle</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButtonUpdateEmployee">
-           <property name="text">
-            <string>Müşteri Bilgileri Güncelle</string>
+            <string>Müşteri Ekle/ Müşteri Bilgilerini Güncelle</string>
            </property>
           </widget>
          </item>

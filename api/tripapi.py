@@ -18,12 +18,12 @@ class TripApi:
         else:
             raise Exception(f"Seferler Alınırken Hata Oluştu: {response.status_code} - {response.text}")
 
-    """def update_vehicle_api(self,vehicle_data):
-        url = f"{BASE_URL}/vehicle"
-        response = requests.put(url,json=vehicle_data)
+    def load_trip(self,order_data):
+        url = f"{BASE_URL}/trip"
+        response = requests.put(url,json = order_data)
         if response.status_code in (201,400,401):
             return response.json()
         else:
-            raise Exception(f"Araç Bilgileri Güncelleme İşleminde Hata Oluştu: {response.status_code} - {response.text}")"""
-    
-    # Sefer Arama Eklenecek
+            raise Exception(f"Siparişler Yüklenirken Hata Oluştu: {response.status_code} - {response.text}")
+        
+        
