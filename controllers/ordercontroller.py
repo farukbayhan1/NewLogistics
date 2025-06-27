@@ -130,15 +130,5 @@ class OrderController:
         employee_service = AddEmployeeService()
         employee_data = employee_service.get_employees()
 
-    def load_orders(self):
-        # Burada siparişlerin yüklenmesi için filtreler oluştur
-
-
  
     
-  
-
-
-
-
-        
